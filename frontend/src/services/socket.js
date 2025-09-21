@@ -7,7 +7,7 @@ class SocketService {
   }
 
   connect() {
-    const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
+    const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'https://sales-dashboard-9k3x.onrender.com';
     
     this.socket = io(SOCKET_URL, {
       transports: ['websocket', 'polling'],
