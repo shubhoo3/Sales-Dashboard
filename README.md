@@ -1,33 +1,43 @@
-Sales Dashboard
+# 📊 Sales Dashboard
+
 A comprehensive sales analytics dashboard built with modern web technologies. Features real-time data visualization, interactive filters, and responsive design.
-🚀 Features
 
-Real-time Updates: WebSocket integration for live data updates
-Interactive Filters: Date range, region, and category filtering
-Rich Visualizations: Charts and graphs using Recharts
-Data Tables: Sortable and paginated tables for detailed views
-Responsive Design: Mobile-friendly Material-UI components
-Performance Optimized: MongoDB aggregation pipelines
-RESTful API: Well-structured Express.js backend
+---
 
-🛠 Tech Stack
-Backend
+## 🚀 Features
 
-Node.js with Express.js
-MongoDB with Mongoose ODM
-Socket.IO for real-time communication
-Joi for data validation
+- **Real-time Updates**: WebSocket integration for live data updates  
+- **Interactive Filters**: Date range, region, and category filtering  
+- **Rich Visualizations**: Charts and graphs using Recharts  
+- **Data Tables**: Sortable and paginated tables for detailed views  
+- **Responsive Design**: Mobile-friendly Material-UI components  
+- **Performance Optimized**: MongoDB aggregation pipelines  
+- **RESTful API**: Well-structured Express.js backend  
 
-Frontend
+---
 
-React 18 with hooks
-Material-UI (MUI) for UI components
-Recharts for data visualization
-Socket.IO Client for real-time updates
-Date-fns for date manipulation
+## 🛠 Tech Stack
 
-📁 Project Structure
-project-root/
+### Backend
+- Node.js with Express.js  
+- MongoDB with Mongoose ODM  
+- Socket.IO for real-time communication  
+- Joi for data validation  
+
+### Frontend
+- React 18 with hooks  
+- Material-UI (MUI) for UI components  
+- Recharts for data visualization  
+- Socket.IO Client for real-time updates  
+- Date-fns for date manipulation  
+
+---
+
+## 📁 Project Structure
+
+
+```
+Sales-Dashboard/
 ├── backend/
 │   ├── models/                 # MongoDB models
 │   │   ├── Customer.js
@@ -63,57 +73,56 @@ project-root/
 │   ├── public/
 │   └── package.json
 └── README.md
+```
 
-🚀 Getting Started
-Prerequisites
 
-Node.js (v16 or higher)
-MongoDB (local installation or MongoDB Atlas)
-npm or yarn
+---
 
-Backend Setup
+## 🚀 Getting Started
 
-Navigate to the backend directory:
+### Prerequisites
+- Node.js (v16 or higher)  
+- MongoDB (local installation or MongoDB Atlas)  
+- npm or yarn  
 
-bash   cd backend
+### Backend Setup
+```bash
+# Navigate to backend
+cd backend
 
-Install dependencies:
+# Install dependencies
+npm install
 
-bash   npm install
+# Create a .env file
+MONGODB_URI=mongodb://localhost:27017/sales_dashboard
+PORT=5000
+NODE_ENV=development
+CLIENT_URL=http://localhost:3000
 
-Create a .env file:
+# Seed database with sample data
+npm run seed
 
-env   MONGODB_URI=mongodb://localhost:27017/sales_dashboard
-   PORT=5000
-   NODE_ENV=development
-   CLIENT_URL=http://localhost:3000
-
-Seed the database with sample data:
-
-bash   npm run seed
-
-Start the development server:
-
-bash   npm run dev
+# Start development server
+npm run dev
+```
 The backend will run on http://localhost:5000
 Frontend Setup
 
 Navigate to the frontend directory:
 
-bash   cd frontend
+# Navigate to frontend
+cd frontend
 
-Install dependencies:
+# Install dependencies
+npm install
 
-bash   npm install
+# Create .env file (optional)
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_SOCKET_URL=http://localhost:5000
 
-Create environment variables (optional):
+# Start development server
+npm start
 
-env   REACT_APP_API_URL=http://localhost:5000/api
-   REACT_APP_SOCKET_URL=http://localhost:5000
-
-Start the development server:
-
-bash   npm start
 The frontend will run on http://localhost:3000
 📊 API Endpoints
 Analytics Routes
