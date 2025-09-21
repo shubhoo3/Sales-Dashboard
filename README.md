@@ -194,7 +194,7 @@ REACT_APP_SOCKET_URL - WebSocket server URL
 
 # Screenshots
 
-<img width="1401" height="491" alt="image" src="https://github.com/user-attachments/assets/56067ed5-8e4e-4445-8e2a-6f7981683b86" />
+<img width="1617" height="483" alt="image" src="https://github.com/user-attachments/assets/bfd86467-f65c-4576-acdf-78784c5038b6" />
 <img width="1890" height="727" alt="image" src="https://github.com/user-attachments/assets/9a43ca9d-b21e-4464-990d-cf25fc1450f4" />
 <img width="1910" height="913" alt="image" src="https://github.com/user-attachments/assets/80ccdaec-98ff-40cd-b0e4-49daa7abc388" />
 <img width="1917" height="861" alt="image" src="https://github.com/user-attachments/assets/45d79972-4fe0-403b-96ee-7c0dede0d4ac" />
